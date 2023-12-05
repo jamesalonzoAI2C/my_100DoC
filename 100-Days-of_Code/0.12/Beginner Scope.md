@@ -65,7 +65,6 @@ print(f"enemies outside function: {enemies}")
 ```
 Must use the keyword "global" before calling the variable to modying global scope, locally. **Do not do it. Not recommended**
 Instead, modying the function to ***return***. Look at the example below.
-
 ```python
 enemies = 1
 
@@ -76,3 +75,12 @@ def increase_enemies():
 increase_enemies()
 print(f"enemies outside function: {enemies}")
 ```
+## Global Constants
+
+Global scope can be useful when defining **constants**. Constants are variables that will never change. Naming convention is to turn it into all uppercase and if neceessary seperated by underscores.
+Examples are:
+```python
+PI = 3.14159
+URL = "https://www.google.com"
+TWITTER_HANDLE = @handle
+ ```
