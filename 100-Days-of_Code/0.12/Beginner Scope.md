@@ -22,3 +22,4 @@ enemies inside function: 2
 enemies outside function: 1
 
 ```
+>The variable declared above the code block is a *global* variable and the variable assigned inside the functions is a *local*variable.
