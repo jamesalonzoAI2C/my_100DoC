@@ -34,6 +34,7 @@ drink_potion()
 ```
 The above will print the integter "2". However if we try and call the variable outide the drink_potion function, it will raise an error. It raises an error because the potion_strength variable is local to the fucntion.
 
+3. 
 ```python
 def drink_potion():
     potion_strength = 2
