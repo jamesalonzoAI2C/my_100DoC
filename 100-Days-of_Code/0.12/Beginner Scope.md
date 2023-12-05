@@ -22,4 +22,25 @@ enemies inside function: 2
 enemies outside function: 1
 
 ```
->The variable declared above the code block is a *global* variable and the variable assigned inside the functions is a *local*variable.
+The variable declared above the code block is a *global* variable and the variable assigned inside the functions is a *local*variable.
+
+Another example is in block (3). 
+```python
+def drink_potion():
+    potion_strength = 2
+    print(potion_stregnth)
+
+drink_potion()
+```
+The above will print the integter "2". However if we try and call the variable outide the drink_potion function, it will raise an error. It raises an error because the potion_strength variable is local to the fucntion.
+
+```python
+def drink_potion():
+    potion_strength = 2
+    print(potion_stregnth)
+
+drink_potion()
+print(potion_strength)
+```
+>    print(potion_stregnth)
+NameError: name 'potion_stregnth' is not defined
