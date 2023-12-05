@@ -2,10 +2,10 @@
 
 ## *Local  vs. Global Scope*
 
-The below is an explanation into ***scope***. The first block (1) is the code entered and the second block (2) is the output.
+The below is an explanation into ***scope***. Block (1) is the code entered and the block (2) is the output.
 
 1. 
-``` 
+```python 
 enemies = 1
 
 def increase_enemies():
@@ -17,7 +17,7 @@ print(f"enemies outside function: {enemies}")
 
 ```
 2. 
-```
+```python
 enemies inside function: 2
 enemies outside function: 1
 
