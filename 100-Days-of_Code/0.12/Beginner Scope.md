@@ -32,7 +32,7 @@ def drink_potion():
 
 drink_potion()
 ```
-The above will print the integter "2". However if we try and call the variable outide the drink_potion function, it will raise an error. It raises an error because the potion_strength variable is local to the fucntion.
+The above will print the integter "2". However if we try and call the variable outide the drink_potion function, it will raise an error. It raises an error because the potion_strength variable is local to the fucntion. Meaning the variable is only accesible within the function.
 
 ```python
 def drink_potion():
@@ -44,3 +44,7 @@ print(potion_strength)
 ```
 >    print(potion_stregnth)
 NameError: name 'potion_stregnth' is not defined
+
+The rule is global variables are accessible within functions. They must be declared before the function that is trying to access the variable. The are accessible regardless of how deep they get nested within a function. 
+
+**The concept of *scope* also applies to fucntions. It is called *Namespace*. If function b is created within function a. You will not be able to call function b becuase it is local to function a**
