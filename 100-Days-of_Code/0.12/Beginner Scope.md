@@ -1,1 +1,9 @@
-# **Beginner Scope and Number Guessing Game**
+# **Beginner Scope**
+
+## Local  vs. Global Scope
+
+'''
+def my_attempt()
+    print(yo)
+    
+'''
