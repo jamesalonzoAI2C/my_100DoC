@@ -42,6 +42,7 @@ dice_num = randint(1, 6)
 print(dice_imgs[dice_num])
 ```
 *Describing the Problem*
+
 When the code is ran, it will successfully run at time and then at other times with will give a list index out of range erorr. 
 
 - How do you reproduce the bug?
@@ -73,3 +74,47 @@ elif year > 1994:
 ### Fix the Errors
 
 This step is pretty obvious. When the editor or console is giving an error. Fix the error before moving on. It is important to run and check your code regularly to test for bugs and errors. 
+
+### Print is your Friend
+
+use print statements to try and identify and narow down the problem. 
+
+```python
+pages = 0
+word_per_page = 0
+pages = int(input("Number of pages: "))
+word_per_page == int(input("Number of words per page: "))
+total_words = pages * word_per_page
+print(total_words)
+```
+```python
+pages = 0
+word_per_page = 0
+pages = int(input("Number of pages: "))
+word_per_page == int(input("Number of words per page: "))
+total_words = pages * word_per_page
+print(f"pages = {pages}")
+print(f"word_per_page = {word_per_page}")
+print(total_words)
+```
+After adding the print statements above I get the following output:
+```python
+Number of pages: 10
+Number of words per page: 250
+pages = 10
+word_per_page = 0
+0
+```
+Using that, we can identify the issue.
+
+### Use a Debugger
+
+pythontutor.com or thonny
+
+### Take a Break!!!
+
+### Ask a friend
+
+### Run Often
+
+### Stackoverflow
