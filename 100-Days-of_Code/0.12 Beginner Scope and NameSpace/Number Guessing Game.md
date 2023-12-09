@@ -9,6 +9,14 @@
 > - If they run out of turns, provide feedback to the player. 
 > - Include two different difficulty levels (e.g., 10 guesses in easy mode, only 5 guesses in hard mode).
 
+## Differences
+
+- I like how Angela imported 'randint' from random. It allowed for the variable answer to just be set as answer = randint(1, 100) instead of calling random.randint(1,100). I did not know that was possible. 
+- Angela set GLOBAL_VARIABLES for the amount of turns. I tried setting global variables but could not figure it out.
+- she set numerous functions and then called the functions with in the game. I took a longer apporach and made an entire easy game and a hard game. It was simple for me becuase i only needed to create one game and just set the number of turns differently for the other. 
+- i like how she manipulated the code for the set_diffculty vairbale and the way turns was updated.
+- to exit the game function, Angela simnply "RETURN" when the turns was 0. I created a flag. She's too good.
+
 ## ***My Solution***
 ```python
 from art import logo
@@ -128,10 +136,3 @@ def game():
 
 game()
 ```
-## Differences
-
-- I like how Angela imported 'randint' from random. It allowed for the variable answer to just be set as answer = randint(1, 100) instead of calling random.randint(1,100). I did not know that was possible. 
-- Angela set GLOBAL_VARIABLES for the amount of turns. I tried setting global variables but could not figure it out.
-- she set numerous functions and then called the functions with in the game. I took a longer apporach and made an entire easy game and a hard game. It was simple for me becuase i only needed to create one game and just set the number of turns differently for the other. 
-- i like how she manipulated the code for the set_diffculty vairbale and the way turns was updated.
-- to exit the game function, Angela simnply "RETURN" when the turns was 0. I created a flag. She's too good.
